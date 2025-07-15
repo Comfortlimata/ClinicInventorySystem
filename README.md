@@ -1,61 +1,107 @@
-# ClinicInventorySystem
+🏥 Clinic Inventory System
 
-A simple desktop application for managing clinic medicine inventory, built with Python and Tkinter.
+The **Clinic Inventory System** is a lightweight, standalone desktop application built with Python for tracking and managing medication stock in rural health clinics. Designed to operate without an internet connection or external database, this system provides a simple and effective solution for managing medicine inventory in low-resource settings like rural Zambia
 
-## Features
-- Add new medicines with details (name, category, quantity, unit, expiry date)
-- View all medicines in a searchable, sortable table
-- SQLite database backend for persistent storage
-- Simple, user-friendly interface
+## ✅ Features
 
-## Requirements
-- Python 3.7+
-- Tkinter (usually included with Python)
-- SQLite3 (included with Python)
+- 🩺 **Add Medication** — Input medicine name, quantity, unit (e.g., tablets, bottles), and expiry date  
+- 📋 **View Inventory** — Display a list of all medicines currently in stock  
+- 💾 **Auto-Save Locally** — Data is saved automatically to a local file (`rural_inventory.json`)  
+- ❌ **No Database Required** — Ideal for offline use in clinics with limited infrastructure  
+- 🖥️ **User-Friendly GUI** — Built with Python’s Tkinter for easy navigation  
+- 📦 **Packaged as `.exe`** — Runs on any Windows computer without Python installed 
 
-## Setup Instructions
+## 💡 Use Case
 
-1. **Clone the repository:**
-   ```sh
-   git clone https://github.com/Comfortlimata/ClinicInventorySystem.git
-   cd ClinicInventorySystem
-   ```
+This system was developed to help health workers in rural clinics manage inventory reliably and easily, without needing a stable internet connection or technical expertise.
 
-2. **(Optional) Create a virtual environment:**
-   ```sh
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
+---
 
-3. **Install dependencies:**
-   - No external dependencies required (uses standard Python libraries)
+## 🛠 Technologies Used
 
-4. **Initialize the database and run the app:**
-   ```sh
-   python main.py
-   ```
+| Component        | Tool/Language     |
+|------------------|-------------------|
+| Programming      | Python 3.x        |
+| GUI              | Tkinter           |
+| Data Storage     | JSON (File-based) |
+| Executable Build | PyInstaller       |
 
-## Usage
-- **Add Medicine:** Fill in the form and click "Add" to save a new medicine to the inventory.
-- **View Inventory:** Click "View Inventory" to see all medicines in a searchable table.
-- **Search:** Use the search bar in the inventory window to filter medicines by name.
+---
 
-## Project Structure
-```
+## 🗂 Folder Structure
+
 ClinicInventorySystem/
-├── logic/
-│   └── inventory_manager.py      # Database logic for medicines
+├── main.py # Application entry point
 ├── ui/
-│   ├── main_window.py           # Main Tkinter UI
-│   └── database_setup.py        # Database setup and connection
-├── main.py                      # Entry point
-├── rural_inventory.db           # SQLite database file (created at runtime)
-├── setup_database.py            # (Legacy) Database setup script
-└── README.md                    # Project documentation
-```
+│ └── main_window.py # GUI layout and logic
+├── logic/
+│ └── inventory_manager.py # Save/load functions
+├── dist/
+│ └── main.exe # Standalone executable
+├── rural_inventory.json # Data file (created on first run)
 
-## Contributing
-Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+yaml
+Copy
+Edit
 
-## License
-This project is open source and available under the [MIT License](LICENSE). 
+---
+
+## 💻 How to Use
+
+### ▶️ Option 1: Run with Python (Development)
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/comfortlimata/ClinicInventorySystem.git
+   cd ClinicInventorySystem
+Run the app:
+
+bash
+Copy
+Edit
+python main.py
+🟦 Option 2: Run the .exe Without Python
+Go to the Releases
+
+Download the latest .zip file
+
+Extract it and open the folder
+
+Double-click main.exe to launch the app
+
+rural_inventory.json will be created automatically to store your inventory data
+
+🧪 Sample Entry
+Medicine Name	Quantity	Unit	Expiry Date
+Paracetamol	100	Tablets	2025-08-01
+Amoxicillin	50	Bottles	2024-12-10
+
+🔐 Data Handling
+Stores all medicine records in rural_inventory.json
+
+No external database or internet required
+
+Safe for offline, rural environments
+
+📌 Future Enhancements
+Medicine search/filter
+
+Expiry date alerts
+
+Printable or exportable inventory reports
+
+Login system for staff tracking
+
+Cloud backup integration (optional for internet-enabled clinics)
+
+🙋 Author
+Comfort Limata
+Student – Information Systems and Technology
+📍 Zambia
+📧 Email: comfortlimata@gmail.com
+🌐 GitHub: github.com/comfortlimata
+
+📝 License
+This project is licensed under the MIT License.
+You are free to use, modify, and distribute this software for educational and non-commercial purposes
+ 
