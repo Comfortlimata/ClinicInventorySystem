@@ -1,0 +1,61 @@
+# ClinicInventorySystem
+
+A simple desktop application for managing clinic medicine inventory, built with Python and Tkinter.
+
+## Features
+- Add new medicines with details (name, category, quantity, unit, expiry date)
+- View all medicines in a searchable, sortable table
+- SQLite database backend for persistent storage
+- Simple, user-friendly interface
+
+## Requirements
+- Python 3.7+
+- Tkinter (usually included with Python)
+- SQLite3 (included with Python)
+
+## Setup Instructions
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Comfortlimata/ClinicInventorySystem.git
+   cd ClinicInventorySystem
+   ```
+
+2. **(Optional) Create a virtual environment:**
+   ```sh
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   - No external dependencies required (uses standard Python libraries)
+
+4. **Initialize the database and run the app:**
+   ```sh
+   python main.py
+   ```
+
+## Usage
+- **Add Medicine:** Fill in the form and click "Add" to save a new medicine to the inventory.
+- **View Inventory:** Click "View Inventory" to see all medicines in a searchable table.
+- **Search:** Use the search bar in the inventory window to filter medicines by name.
+
+## Project Structure
+```
+ClinicInventorySystem/
+├── logic/
+│   └── inventory_manager.py      # Database logic for medicines
+├── ui/
+│   ├── main_window.py           # Main Tkinter UI
+│   └── database_setup.py        # Database setup and connection
+├── main.py                      # Entry point
+├── rural_inventory.db           # SQLite database file (created at runtime)
+├── setup_database.py            # (Legacy) Database setup script
+└── README.md                    # Project documentation
+```
+
+## Contributing
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## License
+This project is open source and available under the [MIT License](LICENSE). 
