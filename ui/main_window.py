@@ -61,7 +61,7 @@ def display_inventory():
     search_var.trace_add('write', filter_inventory)
     search_frame = tk.Frame(inv_window, bg=BG_COLOR)
     search_frame.pack(pady=10)
-    tk.Label(search_frame, text="Search by Name:", bg=BG_COLOR, fg=LABEL_COLOR, font=("Arial", 11)).pack(side=tk.LEFT, padx=(0, 8))
+    tk.Label(search_frame, text="Search by Name or Expiry Date:", bg=BG_COLOR, fg=LABEL_COLOR, font=("Arial", 11)).pack(side=tk.LEFT, padx=(0, 8))
     tk.Entry(search_frame, textvariable=search_var, width=40, bg=ENTRY_BG).pack(side=tk.LEFT)
 
     # Table/Grid using Treeview

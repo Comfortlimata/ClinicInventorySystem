@@ -7,6 +7,26 @@ A simple desktop application for managing clinic medicine inventory, built with 
 - View all medicines in a searchable, sortable table
 - SQLite database backend for persistent storage
 - Simple, user-friendly interface
+- Search by medicine name or expiry date
+- Expiring drugs calendar with visual alerts
+
+## Screenshots & Demo
+
+**Add Medicine Form – Enter new medicine details including name, quantity, unit, and expiry date.**
+
+![Add Medicine Form](media/1770.2025141.09.png)
+
+**Inventory Table – View and search all medicines currently in stock.**
+
+![Inventory Table](media/1770.202514050C.png)
+
+**Expiring Drugs Calendar – See upcoming expiring medicines highlighted on a calendar.**
+
+![Expiring Drugs Calendar](media/1770.2025140.26REC.png)
+
+**System Demo Video – Walkthrough of adding, searching, and tracking medicines in the Clinic Inventory System.**
+
+https://user-images.githubusercontent.com/your-github-username/ClinicInventorySystem/media/Untitled%20design.mp4
 
 ## Requirements
 - Python 3.7+
@@ -42,7 +62,7 @@ A simple desktop application for managing clinic medicine inventory, built with 
 - **Add Medicine:** Fill in the form and click "Add" to save a new medicine to the inventory.
 - **View Inventory:** Click "View Inventory" to see all medicines in a searchable table.
 - **Search:** Use the search bar in the inventory window to filter medicines by name or expiry date (YYYY-MM-DD).
-- **Expiring Drugs:** Click the "Expiring Drugs" button to open a window showing:
+- **Expiring Drugs:** Click the "Expiring Drugs button to open a window showing:
   - A calendar with all expiring dates in the next 30 days marked.
   - An advice label showing the next expiring medicine and date.
   - A table listing medicines expiring on the selected date.
@@ -58,6 +78,7 @@ ClinicInventorySystem/
 ├── main.py                      # Entry point
 ├── rural_inventory.db           # SQLite database file (created at runtime)
 ├── setup_database.py            # (Legacy) Database setup script
+├── media/                       # Screenshots and demo videos
 └── README.md                    # Project documentation
 ```
 
@@ -65,4 +86,4 @@ ClinicInventorySystem/
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
 
 ## License
-This project is open source and available under the [MIT License](LICENSE). 
+This project is open source and available under the [MIT License](LICENSE).
