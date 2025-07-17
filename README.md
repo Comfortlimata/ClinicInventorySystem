@@ -14,19 +14,19 @@ A simple desktop application for managing clinic medicine inventory, built with 
 
 **Add Medicine Form – Enter new medicine details including name, quantity, unit, and expiry date.**
 
-*Screenshot: Add Medicine Form*
+![Add Medicine Form](media/17.07.2025_01.41.09_REC.png)
 
 **Inventory Table – View and search all medicines currently in stock.**
 
-*Screenshot: Inventory Table*
+![Inventory Table](media/17.07.2025_01.40.50_REC.png)
 
 **Expiring Drugs Calendar – See upcoming expiring medicines highlighted on a calendar.**
 
-*Screenshot: Expiring Drugs Calendar*
+![Expiring Drugs Calendar](media/17.07.2025_01.40.26_REC.png)
 
 **System Demo Video – Walkthrough of adding, searching, and tracking medicines in the Clinic Inventory System.**
 
-*Demo video available upon request*
+[Demo Video](media/Untitled%20design.mp4)
 
 ## Requirements
 - Python 3.7+
